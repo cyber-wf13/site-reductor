@@ -326,6 +326,7 @@ ul, li{
   }
   &__list-item{
     width: 512px;
+    padding-bottom: 8px;
     &::before{
       content: '';
       top: 14px;

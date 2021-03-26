@@ -38,6 +38,7 @@
     }
     &__list-item{
       width: 395px;
+      padding-bottom: 8px;
     }
     &__btn{
       height: 70px;
@@ -273,10 +274,10 @@
     }
     &__list-item{
       width: 260px;
-      line-height: 1.4em;
+      line-height: 1.2em;
       &::before{
         content: '';
-        top: 10px;
+        top: 6px;
       }
     }
     &__btn{
@@ -409,6 +410,8 @@
     }
     &__list-item{
       width: 210px;
+      line-height: 1.1em;
+      padding-bottom: 15px;
     }
     &__btn{
       height: 60px;
@@ -514,6 +517,8 @@
     }
     &__list-item{
       width: 165px;
+      line-height: 1em;
+      padding-bottom: 10px;
     }
     &__btn{
       font-size: 15px;
@@ -620,6 +625,8 @@
     }
     &__list-item{
       width: 140px;
+      line-height: 1.1em;
+      padding-bottom: 10px;
     }
     &__btn{
       font-size: 13px;
