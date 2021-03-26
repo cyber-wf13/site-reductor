@@ -1,0 +1,24 @@
+.title{
+  font-family: 'BebasNeue-Bold';
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.2em;
+  color: #161718;
+  text-transform: uppercase;
+  text-align: center;
+}
+.list__item{
+  position: relative;
+  padding-left: 10px;
+  &::before{
+    content: '';
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #E10000;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+  }
+}
