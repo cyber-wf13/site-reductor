@@ -1023,6 +1023,11 @@ ul, li {
     max-height: none;
     min-width: 100%;
   }
+  .hero__link {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
   .hero__text {
     margin: 20px 0px 0px;
   }
@@ -1034,7 +1039,7 @@ ul, li {
     margin: 0 auto 20px;
   }
   .card {
-    width: 50%;
+    width: 100%;
   }
   .products {
     padding-bottom: 130px;
