@@ -93,6 +93,11 @@ ul, li{
     color: #fff;
     text-transform: uppercase;
     box-shadow: 0px 15px 40px rgba(39, 39, 39, 0.3);
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+      transform: scale(0.8);
+    }
   }
 }
 .card{
@@ -186,6 +191,11 @@ ul, li{
     line-height: 1.1em;
     color: #fff;
     text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+      transform: scale(0.8);
+    }
   }
 }
 .products{
@@ -204,6 +214,12 @@ ul, li{
     height: 250px;
     width: 250px;
     background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    transition: 0.2s;
+    &:hover{
+      border: 5px solid #fff;
+    }
   }
 }
 .products-slider__item--1{
@@ -352,6 +368,11 @@ ul, li{
     color: #fff;
     display: block;
     margin: 0px auto;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+      transform: scale(0.8);
+    }
   }
 }
 .video{

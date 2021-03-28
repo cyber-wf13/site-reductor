@@ -533,6 +533,16 @@ ul, li {
   text-transform: uppercase;
   -webkit-box-shadow: 0px 15px 40px rgba(39, 39, 39, 0.3);
           box-shadow: 0px 15px 40px rgba(39, 39, 39, 0.3);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hero__btn:hover {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .card {
@@ -647,6 +657,16 @@ ul, li {
   line-height: 1.1em;
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.info__btn:hover {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .products {
@@ -669,6 +689,15 @@ ul, li {
   height: 250px;
   width: 250px;
   background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.products-slider__item:hover {
+  border: 5px solid #fff;
 }
 
 .products-slider__item--1 {
@@ -854,6 +883,16 @@ ul, li {
   color: #fff;
   display: block;
   margin: 0px auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about__btn:hover {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .video {
@@ -917,7 +956,6 @@ ul, li {
 
 @media (max-width: 1200px) {
   .hero__title {
-    font-size: 60px;
     max-width: 400px;
   }
   .hero__text {
@@ -932,9 +970,6 @@ ul, li {
   .textbox__text {
     width: 941px;
   }
-  .textbox__inner-text {
-    font-size: 20px;
-  }
   .textbox__list {
     padding: 14px 0px 50px;
   }
@@ -947,7 +982,6 @@ ul, li {
     padding: 0px 10px;
   }
   .about__list {
-    font-size: 16px;
     padding: 22px 30px 34px;
   }
   .about__list-item {
@@ -1127,32 +1161,43 @@ ul, li {
 @media (max-width: 768px) {
   .hero__title {
     text-align: center;
-    font-size: 50px;
     max-width: 515px;
   }
   .hero__inner-text {
     padding: 20px 0px 55px;
   }
+  .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .info__text {
-    margin-left: 50px;
+    margin-left: 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .info__title {
-    font-size: 70px;
     max-width: 525px;
   }
   .info__inner-text {
-    font-size: 20px;
-    max-width: 435px;
     padding: 25px 0px 35px;
   }
   .info__record {
     margin-right: 35px;
   }
-  .info__record-title {
-    font-size: 18px;
-  }
   .info__record-item {
-    font-size: 16px;
     padding: 8px 15px;
   }
   .info__btn {
@@ -1186,9 +1231,6 @@ ul, li {
   .textbox__text {
     width: 560px;
   }
-  .textbox__inner-text {
-    font-size: 15px;
-  }
   .textbox__list {
     padding: 12px 0px 40px;
   }
@@ -1200,11 +1242,10 @@ ul, li {
     padding-top: 30px;
   }
   .about__container {
-    max-width: 560px;
-    padding: 34px 0px 30px;
+    margin: 0 15px;
+    padding: 34px 10px 30px;
   }
   .about__list {
-    font-size: 15px;
     padding: 12px 15px 25px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1218,7 +1259,6 @@ ul, li {
             align-items: center;
   }
   .about__list-item {
-    width: 260px;
     line-height: 1.2em;
   }
   .about__list-item::before {
@@ -1233,7 +1273,6 @@ ul, li {
     padding-bottom: 60px;
   }
   .video__title {
-    font-size: 40px;
     padding: 50px 0px 30px;
     letter-spacing: 0.03em;
   }
@@ -1254,11 +1293,7 @@ ul, li {
             align-items: center;
     padding: 0;
   }
-  .video__text-title {
-    font-size: 25px;
-  }
   .video__inner-text {
-    font-size: 18px;
     max-width: 490px;
   }
   .video__item {
@@ -1271,11 +1306,9 @@ ul, li {
   .hero__title {
     margin: 0 auto;
     text-align: center;
-    font-size: 40px;
     max-width: 415px;
   }
   .hero__inner-text {
-    font-size: 14px;
     padding: 15px 0px 45px;
     max-width: 455px;
   }
@@ -1287,22 +1320,16 @@ ul, li {
     margin-left: 20px;
   }
   .info__title {
-    font-size: 60px;
     max-width: 455px;
   }
   .info__inner-text {
-    font-size: 18px;
     max-width: 390px;
     padding: 20px 0px 30px;
   }
   .info__record {
     margin-right: 30px;
   }
-  .info__record-title {
-    font-size: 17px;
-  }
   .info__record-item {
-    font-size: 15px;
     padding: 8px 10px;
   }
   .info__btn {
@@ -1322,6 +1349,9 @@ ul, li {
     left: 49%;
     width: 200px;
   }
+  .products-slider__item {
+    margin-right: 0;
+  }
   .products-slider__btn {
     bottom: -37px;
   }
@@ -1340,9 +1370,6 @@ ul, li {
   .textbox__text {
     width: 440px;
   }
-  .textbox__inner-text {
-    font-size: 13px;
-  }
   .textbox__list {
     padding: 10px 0px 35px;
   }
@@ -1350,19 +1377,13 @@ ul, li {
     padding-bottom: 22px;
   }
   .about__title {
-    font-size: 40px;
     padding-top: 20px;
   }
   .about__container {
-    max-width: 450px;
-    padding: 24px 0px 20px;
+    padding: 24px 10px 20px;
   }
   .about__list {
-    font-size: 15px;
-    padding: 10px 10px 20px;
-  }
-  .about__list-item {
-    width: 210px;
+    padding: 10px 15px 20px;
   }
   .about__btn {
     height: 60px;
@@ -1372,18 +1393,13 @@ ul, li {
     padding-bottom: 40px;
   }
   .video__title {
-    font-size: 30px;
-    padding: 40px 0px 20px;
+    padding: 40px 10px 20px;
     letter-spacing: 0.01em;
   }
   .video__container {
     max-width: 450px;
   }
-  .video__text-title {
-    font-size: 23px;
-  }
   .video__inner-text {
-    font-size: 16px;
     max-width: 420px;
   }
   .video__item {
@@ -1393,35 +1409,20 @@ ul, li {
 }
 
 @media (max-width: 490px) {
-  .hero__title {
-    width: 100%;
-    font-size: 30px;
-    max-width: 315px;
-  }
   .hero__inner-text {
-    font-size: 12px;
     padding: 10px 0px 35px;
     max-width: 380px;
   }
   .info__text {
     margin-left: 20px;
   }
-  .info__title {
-    font-size: 50px;
-    max-width: 390px;
-  }
   .info__inner-text {
-    font-size: 16px;
     padding: 15px 0px 20px;
   }
   .info__record {
     margin-right: 25px;
   }
-  .info__record-title {
-    font-size: 16px;
-  }
   .info__record-item {
-    font-size: 15px;
     padding: 8px 8px;
   }
   .info__btn {
@@ -1433,17 +1434,11 @@ ul, li {
   .products__title {
     padding: 20px 0px 10px;
   }
-  .title {
-    font-size: 55px;
-  }
   .textbox {
     padding-bottom: 23px;
   }
   .textbox__text {
     width: 300px;
-  }
-  .textbox__inner-text {
-    font-size: 11px;
   }
   .textbox__list {
     padding: 8px 0px 28px;
@@ -1452,41 +1447,22 @@ ul, li {
     padding-bottom: 18px;
   }
   .about__title {
-    font-size: 30px;
     padding-top: 15px;
   }
   .about__container {
-    max-width: 360px;
-    padding: 20px 0px 15px;
+    padding: 20px 10px 15px;
   }
   .about__list {
-    font-size: 12px;
     padding: 10px 10px 20px;
-  }
-  .about__list-item {
-    width: 165px;
-  }
-  .about__btn {
-    font-size: 15px;
-    height: 50px;
-    width: 290px;
   }
   .video {
     padding-bottom: 20px;
   }
   .video__title {
-    font-size: 30px;
     padding: 30px 0px 15px;
   }
-  .video__container {
-    max-width: 330px;
-  }
-  .video__text-title {
-    font-size: 20px;
-  }
-  .video__inner-text {
-    font-size: 14px;
-    max-width: 290px;
+  .video__text {
+    padding: 0 10px 0px;
   }
   .video__item {
     height: 185px;
@@ -1496,12 +1472,9 @@ ul, li {
 
 @media (max-width: 420px) {
   .hero__title {
-    width: 100%;
-    font-size: 20px;
-    max-width: 215px;
+    font-size: 50px;
   }
   .hero__inner-text {
-    font-size: 12px;
     padding: 10px 10px 25px;
     max-width: 365px;
   }
@@ -1517,11 +1490,10 @@ ul, li {
     width: 125px;
   }
   .info__title {
-    font-size: 40px;
+    font-size: 55px;
     max-width: 310px;
   }
   .info__inner-text {
-    font-size: 15px;
     padding: 10px 0px 15px;
   }
   .info__record {
@@ -1534,9 +1506,6 @@ ul, li {
     width: max-content;
     margin-top: 10px;
   }
-  .info__record-title {
-    font-size: 15px;
-  }
   .info__btn {
     width: 290px;
     height: 60px;
@@ -1548,56 +1517,43 @@ ul, li {
   .products__title {
     padding: 15px 0px 5px;
   }
-  .title {
-    font-size: 48px;
-  }
   .about {
     padding-bottom: 18px;
   }
   .about__title {
-    font-size: 20px;
     padding-top: 10px;
   }
   .about__container {
-    max-width: 300px;
-    padding: 15px 0px 10px;
+    padding: 15px 10px 10px;
   }
   .about__list {
-    font-size: 11px;
     padding: 7px 8px 17px;
   }
   .about__list-item {
-    width: 140px;
+    width: 90%;
   }
   .about__btn {
-    font-size: 13px;
+    font-size: 14px;
     height: 40px;
     width: 260px;
   }
   .video__title {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
 @media (max-width: 350px) {
   .hero__title {
-    font-size: 25px;
-    max-width: 260px;
+    font-size: 45px;
   }
   .hero__inner-text {
-    font-size: 10px;
-    padding: 10px 3px 15px;
+    padding: 10px 10px 15px;
     max-width: 320px;
   }
   .info__title {
-    font-size: 35px;
     max-width: 310px;
   }
   .info__inner-text {
-    font-size: 13px;
     max-width: 290px;
-  }
-  .video__title {
-    font-size: 28px;
   }
 }

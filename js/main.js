@@ -24,14 +24,14 @@ $('.products-slider').slick({
   nextArrow: '<button type="button" class="products-slider__btn products-slider__btn-next"></button>',
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 993,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
       }
     },
     {
-      breakpoint: 576,
+      breakpoint: 577,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
