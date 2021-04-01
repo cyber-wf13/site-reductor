@@ -3,15 +3,16 @@ const title = document.querySelector('.hero__title');
 const heroBlock = document.querySelector('.hero');
 const titleText = title.textContent;
 
+let backImgHero = heroBlock.getAttribute('style');
 cards.forEach((value)=>{
   value.addEventListener('mouseover', ()=>{
     title.textContent = value.textContent;
-    let backImg = value.getAttribute('style');
-    heroBlock.setAttribute('style', backImg);
+    let backImgCard = value.getAttribute('style');
+    heroBlock.setAttribute('style', backImgCard);
   });
   value.addEventListener('mouseout', ()=>{
     title.textContent = titleText;
-    heroBlock.removeAttribute('style');
+    heroBlock.setAttribute('style', backImgHero);
   });
 })
 
